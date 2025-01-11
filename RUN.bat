@@ -30,22 +30,22 @@ python -m pip install "paddleocr>=2.0.1" -i https://mirror.baidu.com/pypi/simple
 
 echo.
 echo [2/3] 转换PPT为图片...
-python ppt_to_png.py
-if errorlevel 1 (
+python "ppt_to_png.py"
+if %ERRORLEVEL% NEQ 0 (
     echo [错误] PPT转换失败！
     echo 请查看 ppt_conversion.log 获取详细错误信息
     pause
-    exit
+    exit /b 1
 )
 
 echo.
 echo [3/3] 提取关键词页面...
-python ocr_process.py
-if errorlevel 1 (
+python "ocr_process.py"
+if %ERRORLEVEL% NEQ 0 (
     echo [错误] OCR处理失败！
     echo 请查看 ocr_process.log 获取详细错误信息
     pause
-    exit
+    exit /b 1
 )
 
 echo.
