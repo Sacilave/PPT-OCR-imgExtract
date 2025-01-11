@@ -1,0 +1,23 @@
+# 输出目录
+output/
+FinalOutput/
+
+# 日志文件
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+
+# IDE配置
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db 
