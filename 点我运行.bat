@@ -1,8 +1,13 @@
 @echo off
 chcp 65001 > nul
+
 echo ======================================
 echo PPT关键词提取工具 - 自动运行脚本
+echo.
+echo 此插件由 Sacilave 制作哦
+echo 项目地址：https://github.com/Sacilave/PPT-OCR-imgExtract
 echo ======================================
+echo.
 
 :: 检查input文件夹是否存在
 if not exist "input" (
@@ -50,6 +55,6 @@ if %ERRORLEVEL% NEQ 0 (
 
 echo.
 echo ======================================
-echo 处理完成！结果在 FinalOutput 文件夹中
+echo 处理完成！结果在 FinalOutput 文件夹中！
 echo ======================================
 pause 
